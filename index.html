@@ -25,11 +25,10 @@
 
             async function getMemory(tokenId) {
                 if (window.ethereum != null) {
-                web3 = new Web3(window.ethereum);
+                    web3 = new Web3(window.ethereum);
                 }
                 else {
-                    web3 = new Web3(new Web3.providers.HttpProvider("http://cloudflare-eth.com/v1/rinkeby"));
-                    console.log(web3);
+                    web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/d294fcd3bc584b77ae8f1ef4b19b1a5c"))
                 }
                 try {
                 const qrystalContract = new web3.eth.Contract(contract_abi, contract_address); 
