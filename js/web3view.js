@@ -1,12 +1,17 @@
+//Get search query param
 const urlParams = new URLSearchParams(window.location.search);
 const qrystalID = urlParams.get('id');
+//
+//Web3 functions
 const contract_address= "0xa071a7C9b053E6bCA911495fC5F0b56697F20CB8";
 var contract_abi = ''
 
-if(qrystalID == null){
+if(qrystalID == null || qrystalID == ''){
     //Redirect to homepage
+    //window.location.replace('https://qrystals.github.io');
 }
 else {
+    console.log(qrystalID)
     //Web3 functions
     //Fetch ABI
     fetch('./qrystals.json')
@@ -38,7 +43,10 @@ function process_memory(memory){
         window.location.replace(memory);
     }
     else{
-        alert(memory);
+        //Update qrystal image
+        document.getElementById("qrystalTitle").innerHTML = 'QRYSTAL #'+ qrystalID;
+        document.getElementById("qrystalImage").src = 'https://qrystals.github.io/images/' + qrystalID + '.png'
+        document.getElementById("memory").innerHTML = memory;
     }
 
 }

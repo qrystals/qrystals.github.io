@@ -10,7 +10,7 @@ h5 {
     margin-top: 15px !important;
 }
 
-.card {
+.cardedit {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 250px;
     height: 350px;
@@ -28,6 +28,26 @@ h5 {
     background: linear-gradient(45deg, gold, #007aff, #34c759, #af52de, #ff2d55, gold);
     background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+    }
+
+.cardview {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-family: arial;
+    color: whitesmoke;
+    background-color: rgba(10, 10, 10, 255);
+    border-style: solid;
+    border-color: goldenrod;
+    border-width: 3px;
+    border-radius: 8px;
+
+    background: linear-gradient(45deg, gold, #007aff, #34c759, #af52de, #ff2d55, gold);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     }
 
 @keyframes gradient {
@@ -88,10 +108,10 @@ footer {
 
 @font-face {
     font-family: "KenneyBlocks";
-    src: url("./fonts/Kenney_Blocks.ttf");
+    src: url("../fonts/Kenney_Blocks.ttf");
 }
 
 @font-face {
     font-family: "KenneyPixel";
-    src: url("./fonts/Kenney_Pixel.ttf");
+    src: url("../fonts/Kenney_Pixel.ttf");
 }
