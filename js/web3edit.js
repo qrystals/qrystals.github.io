@@ -5,6 +5,7 @@ const qrystalID = urlParams.get('id')
 //Web3 functions
 const contract_address= "0xa071a7C9b053E6bCA911495fC5F0b56697F20CB8";
 var contract_abi = ''
+
 //Fetch ABI
 fetch('./qrystals.json')
 .then(res => res.text())
