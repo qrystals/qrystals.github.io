@@ -23,19 +23,28 @@ async function initweb3() {
         accounts = await web3.eth.getAccounts();
         qrystalContract = new web3.eth.Contract(contract_abi, contract_address);                 
     } catch (error) {
-        alert('Something went wrong! Try later');
+        alert('Something went wrong! Refresh page.');
     }
     }
     else{
-        alert('Please open this link using a Web3 compatible browser and a compatible wallet')
+        alert('Couldn\'t load web3 wallet. Try accessing this page from a computer with a web3 browser connected to a wallet.')
     }
 }
 
-async function setMemory(link, tokenId){
-    qrystalContract.methods.setMemory(tokenId,link).send({from: accounts[0]})
-        .then(alert('You will be asked to pay some ether to update memory, gas settings and network congestion can cause delays in memory update'))
+async function setMemory(memoryVal, tokenId){
+    //Check if memory is valid
+    console.log(memoryVal);
+    if(memoryVal=='' || memoryVal== ' ' || memoryVal == null)
+    {
+        alert('Memory cannot be empty');
+    }
+    else
+    {
+    qrystalContract.methods.setMemory(tokenId, memoryVal).send({from: accounts[0]})
+        .then(alert('You will be asked to pay some ether to update memory, gas settings and network congestion can cause delays in memory update. Once initiated, transaction will continue to process even when this window is closed'))
         .then(value => {alert('Successfully updated memory!! Scan again to access new memory..')})
         .catch(err => {alert('Memory update didn\'t go through')});
+    }
 }
 //
 

@@ -11,18 +11,11 @@
         <script src="./web3edit.js"></script>
         <!-- <input type="text" id="fname" name="fname">
         <input id="SetMemory" type="button" value="SetMemory" onclick="setMemory(document.getElementById('fname').value, qrystalID);"/> -->
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                <a class="navbar-brand" href="#">QRYSTALS</a>
-                </div>
-            </div>
-        </nav>
         <div class="card">
             <h5 id="qrystalTitle">Qrystal ${qrystalID}</h5>        
             <img src="" class="qrystalImage" id="qrystalImage" alt="Qrystal Image"/>
-            <textarea name="memoryInput" class="holocron" cols="40" rows="5" placeholder="What would you like to store? Examples:                 Links: https://qrystals.gitbub.io                                    Text: Congrats on the new life!"></textarea>
-            <button class="updateMemory" id="updateMemory">UPDATE MEMORY</button>
+            <textarea id="memory" name="memoryInput" class="holocron" cols="40" rows="5" maxlength=100 placeholder="What would you like to store?                                                 > Can be text or link (https://..)                                                  ! Max 100 characters"></textarea>
+            <button class="updateMemory" id="updateMemory" onclick="setMemory(document.getElementById('memory').value, qrystalID);">UPDATE MEMORY</button>
         </div>
         <footer class="page-footer font-small indigo">
             <div class="footer-copyright text-center py-3">© 2022 Copyright:
