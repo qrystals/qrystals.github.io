@@ -4,7 +4,7 @@ const qrystalID = urlParams.get('id')
 //
 //Web3 functions
 const contract_address= "0xa071a7C9b053E6bCA911495fC5F0b56697F20CB8";
-var contract_abi = ''
+var contract_abi = '';
 
 //Fetch ABI
 fetch('./qrystals.json')
@@ -22,6 +22,9 @@ async function initweb3() {
         await window.ethereum.enable()
         //Access account
         accounts = await web3.eth.getAccounts();
+        window.ethereum.on('accountsChanged', function (accounts) {
+            accounts = web3.eth.getAccounts();
+        });
         qrystalContract = new web3.eth.Contract(contract_abi, contract_address);                 
     } catch (error) {
         alert('Something went wrong! Refresh page.');
