@@ -157,3 +157,12 @@ img {
     background-color: rgba(10, 10, 10, 255);
     height: 25px;
 }
+
+.showcase {
+    margin-top: 35px;
+}
+
+.showcase_img {
+    width: 64px !important;
+    height: 64px !important;
+}
