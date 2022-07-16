@@ -120,3 +120,31 @@ img {
     width: 129px;
     height: 129px;
 }
+
+.qrystalsBanner {
+    background: -webkit-linear-gradient(45deg, #007aff, #ff2d55);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 3px;
+    font-family: "KenneyBlocks";
+    font-size: 25px;
+}
+
+.storebutton {
+    background: -webkit-linear-gradient(45deg, #007aff, #ff2d55);
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    border: None;
+    border-color:#af52de;
+    border-radius: 10px;
+    border-width: 1px;
+    color: black;
+    margin-top: 3px;
+    margin-right: 0px !important;
+    width: 75px !important;
+    font-family: "KenneyPixel";
+    font-size: 25px;
+    height: 35px;
+    padding-top: 0px;
+}
