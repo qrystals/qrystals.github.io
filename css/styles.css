@@ -162,7 +162,18 @@ img {
     margin-top: 35px;
 }
 
-.showcase_img {
-    width: 64px !important;
-    height: 64px !important;
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+.caption {
+    display: block;
+}
+
+.figure-caption {
+    font-family: "KenneyPixel";
+    font-size: 25px;
 }
