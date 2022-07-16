@@ -148,3 +148,12 @@ img {
     height: 35px;
     padding-top: 0px;
 }
+
+.quote {
+    font-size: 15px !important;
+    color: rgba(200, 200, 200, 255);
+    text-align: center;
+    margin-top: 5px;
+    background-color: rgba(10, 10, 10, 255);
+    height: 25px;
+}
