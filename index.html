@@ -1,54 +1,149 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Qrystals</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Landing Page - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/landingstyles.css" rel="stylesheet" />
     </head>
     <body>
-        <nav class="navbar navbar-dark" style="background-color: #000000;">
-            <a class="navbar-brand qrystalsBanner" href="#">QRYSTALS</a>
-            <div class="justify-content-end">
-                <button class="btn ml-auto mr-1 storebutton">BUY</button>
+        <!-- Navigation-->
+        <nav class="navbar static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#!">QRYSTALS</a>
+                <a class="btn storebutton" href="#signup">BUY</a>
             </div>
         </nav>
+        <!-- Masthead-->
+        <header class="masthead">
 
-        <!-- <div class="container-fluid quote">
-            <i><s>"A diamond</s> The blockchain is forever..."</i>
-        </div> -->
-
-        <div style="text-align: center;">
-            <h1>DIGITAL GEMSTONES</h1>
-            <span class="qualities">RARE</span><span class="qualities">SMART</span><span class="qualities">UNIQUE</span>
-        </div>
-
-        <div class="showcase text-center">
-            <figure class="figure text-center">
-                <img class="rounded showcase_img" src= "./images/14k.png" style="width: 79px !important; height: 79px !important; margin: 5px;">              
-                <figcaption class="figure-caption">
-                    14k
-                </figcaption>
-            </figure>
-            <figure class="figure text-center">
-                <img class="rounded showcase_img" src= "./images/22k.png" style="width: 129px !important; height: 129px !important; margin: 5px;">              
-                <figcaption class="figure-caption">
-                    22k
-                </figcaption>
-            </figure>
-            <figure class="figure text-center">
-                <img class="rounded showcase_img" src= "./images/18k.png" style="width: 99px !important; height: 99px !important; margin: 5px;">              
-                <figcaption class="figure-caption">
-                    18k
-                </figcaption>
-            </figure>
-        </div>
-
-        <footer class="page-footer font-small indigo">
-            <div class="footer-copyright text-center py-3">© 2022 Copyright:
-                <a href="/"> qrystals.github.io</a>
+        </header>
+        <!-- Icons Grid-->
+        <section class="features-icons text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi bi-link-45deg m-auto text-primary"></i></div>
+                            <h3 style="color: white !important;" class="leadHeader">NFT</h3>
+                            <p class="lead mb-0">Qrystals are minted as NFTs on the ethereum blockchain</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi bi-memory m-auto text-primary"></i></div>
+                            <h3 style="color: white !important;" class="leadHeader">MEMORY</h3>
+                            <p class="lead mb-0">Qrystals can store a unique memory directly on the blockchain</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi bi-qr-code-scan m-auto text-primary"></i></div>
+                            <h3 style="color: white !important;" class="leadHeader">SCANNABLE</h3>
+                            <p class="lead mb-0">Use a smartphone camera to scan a qrystal to access its memory</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi bi-pencil-square m-auto text-primary"></i></div>
+                            <h3 style="color: white !important;" class="leadHeader">EDITABLE</h3>
+                            <p class="lead mb-0">A qrystal owner can modify its memory an unlimited number of times</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi bi-gem m-auto text-primary"></i></div>
+                            <h3 style="color: white !important;" class="leadHeader">PURITY</h3>
+                            <p class="lead mb-0">Qrystals can have varying purities which affect their rarity</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi bi-1-square m-auto text-primary"></i></div>
+                            <h3 style="color: white !important;" class="leadHeader">UNIQUE</h3>
+                            <p class="lead mb-0">No two qrystals are alike, even if they have the same purity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image Showcases-->
+        <section class="showcase">
+            <div class="container-fluid p-0">
+                <div class="row g-0"  style="background-color:rgba(10, 10, 10, 255);">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2 class="exampleHeader">READ MEMORY</h2>
+                        <p class="lead mb-0">Point your smartphone camera to a qrystal and follow the popup, it should take you to its memory. <br> If the memory is a link, you will be redirected to the link, otherwise you will see its memory in the penseive.</p>
+                    </div>
+                </div>
+                <div class="row g-0" style="background-color:rgba(10, 10, 10, 255);">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2 class="exampleHeader">WRITE MEMORY</h2>
+                        <p class="lead mb-0">Acess the holocron for the qrystal below and type in the memory you would like to save. Since memories are saved on the blockchain, they cost some gas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials-->
+        <section class="testimonials text-center">
+            <div class="container">
+                <h2 class="mb-5 displayHeading">SHOWCASE</h2>
+                <h3 class="displaySub">Scan or click on the qrystals below to access their memory</h3>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid mb-3" src="images/22k.png" alt="22k" />
+                            <h5 class="purityLabel">22k Pure Qrystal</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid mb-3" src="images/18k.png" alt="18k" />
+                            <h5 class="purityLabel">18k Pure Qrystal</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid mb-3" src="images/14k.png" alt="14k" />
+                            <h5 class="purityLabel">14k Pure Qrystal</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><a href="#!">About</a></li>
+                        </ul>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; qrystals.github.io 2022. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
