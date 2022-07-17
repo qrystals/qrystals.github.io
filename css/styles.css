@@ -177,3 +177,18 @@ div.item {
     font-family: "KenneyPixel";
     font-size: 25px;
 }
+
+h1 {
+    font-family: "KenneyPixel";
+    font-size: 30px;
+    text-align: center;
+    color: silver;
+    margin-top: 20px;
+}
+
+.qualities {
+    margin: 30px;
+    font-family: "KenneyPixel" !important;
+    font-size: 30px;
+    color: white;
+}
