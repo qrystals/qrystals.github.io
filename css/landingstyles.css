@@ -11357,7 +11357,7 @@ header.masthead {
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: black !important;
+  background-color: rgba(10, 10, 10, 255) !important;
   height: 100%;
   width: 100%;
   top: 0;
@@ -11456,4 +11456,28 @@ footer.footer {
   font-family: "KenneyPixel";
   font-size: 20px;
   color: white;
+}
+
+.qrystalIDInput {
+  font-family: "KenneyPixel";
+  font-size: 25px;
+  text-align: center;
+  width: 120px;
+  border: solid;
+  border-color: goldenrod;
+  border-radius: 5px;
+}
+
+.qrystalIDButton {
+  font-family: "KenneyPixel";
+  font-size: 25px;
+  text-align: center;
+  width: 150px;
+  border: solid;
+  border-color: goldenrod;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(45deg, #007aff, #34c759);
+  -webkit-background-clip: text;
+  background-clip: border-box;
+  color: black;
 }

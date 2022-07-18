@@ -192,3 +192,7 @@ h1 {
     font-size: 30px;
     color: white;
 }
+
+.qrystalIDInput {
+    font-family: "KenneyPixel" !important;
+}
