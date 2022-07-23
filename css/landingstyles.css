@@ -11389,22 +11389,22 @@ header.masthead h1, header.masthead .h1 {
 .beforeHeader {
   font-family: "KenneyPixel";
   color: black;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .mainHeader {
   font-family: "KenneyBlocks";
   color: black;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .secondHeader {
   font-family: "KenneyPixel";
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .thirdHeader {
   font-family: "KenneyPixel";
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .showcase .showcase-text {
