@@ -11523,7 +11523,7 @@ footer.footer {
 }
 
 .seperator {
-  height: 1px;
+  height: 3px;
   width: 100%;
   background: linear-gradient(45deg, gold, #007aff, #34c759, #af52de, #ff2d55, gold);
   background-size: 300% 300%;
