@@ -11351,8 +11351,8 @@ header.masthead {
   background-color: black !important;
   /* background: url("../images/background.gif") no-repeat center center; */
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   text-align: center;
   background: linear-gradient(45deg, gold, #007aff, #34c759, #af52de, #ff2d55, gold);
   background-size: 300% 300%;
@@ -11389,7 +11389,7 @@ header.masthead h1, header.masthead .h1 {
 .beforeHeader {
   font-family: "KenneyPixel";
   color: black;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .mainHeader {
   font-family: "KenneyBlocks";
@@ -11434,7 +11434,7 @@ header.masthead h1, header.masthead .h1 {
 
 .displayHeading {
   font-family: "KenneyBlocks";
-  font-size: 45px;
+  font-size: 35px;
   background: -webkit-linear-gradient(45deg, #007aff, #34c759);
   -webkit-background-clip: text;
   background-clip: text;
@@ -11445,6 +11445,9 @@ header.masthead h1, header.masthead .h1 {
   font-family: "KenneyPixel";
   font-size: 25px;
   color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
 }
 
 .call-to-action {
@@ -11482,6 +11485,11 @@ footer.footer {
     src: url("../fonts/Kenney_Pixel.ttf");
 }
 
+@font-face {
+  font-family: "KenneyPixelSquare";
+  src: url("../fonts/Kenney_Pixel_Square.ttf");
+}
+
 .purityLabel {
   font-family: "KenneyPixel";
   font-size: 20px;
@@ -11512,4 +11520,12 @@ footer.footer {
   -webkit-background-clip: text;
   background-clip: border-box;
   color: black;
+}
+
+.seperator {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(45deg, gold, #007aff, #34c759, #af52de, #ff2d55, gold);
+  background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
 }
