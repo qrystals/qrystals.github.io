@@ -11386,11 +11386,6 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-.beforeHeader {
-  font-family: "KenneyPixel";
-  color: black;
-  font-size: 4rem;
-}
 .mainHeader {
   font-family: "KenneyBlocks";
   color: black;
@@ -11401,15 +11396,10 @@ header.masthead h1, header.masthead .h1 {
   color: black;
   font-size: 2rem;
 }
-.secondHeader {
+.smallHeader { 
   font-family: "KenneyPixel";
   color: black;
-  font-size: 2rem;
-}
-.thirdHeader {
-  font-family: "KenneyPixel";
-  color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .showcase .showcase-text {
