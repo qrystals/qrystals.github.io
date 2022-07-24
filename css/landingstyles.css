@@ -11394,7 +11394,12 @@ header.masthead h1, header.masthead .h1 {
 .mainHeader {
   font-family: "KenneyBlocks";
   color: black;
-  font-size: 3rem;
+  font-size: 1.2rem;
+}
+.subHeader {
+  font-family: "KenneyBlocks";
+  color: black;
+  font-size: 2rem;
 }
 .secondHeader {
   font-family: "KenneyPixel";
@@ -11523,7 +11528,7 @@ footer.footer {
 }
 
 .seperator {
-  height: 3px;
+  height: 2px;
   width: 100%;
   background: linear-gradient(45deg, gold, #007aff, #34c759, #af52de, #ff2d55, gold);
   background-size: 300% 300%;
