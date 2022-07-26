@@ -12,7 +12,7 @@ if(qrystalID == null || qrystalID == ''){
     //window.location.replace('https://qrystals.github.io');
 }
 else {
-    console.log(qrystalID)
+    //console.log(qrystalID)
     //Web3 functions
     //Fetch ABI
     fetch('./qrystals.json')
