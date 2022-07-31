@@ -15,7 +15,7 @@ else {
     //console.log(qrystalID)
     //Web3 functions
     //Fetch ABI
-    fetch('./qrystals.json')
+    fetch('../qrystals.json')
     .then(res => res.text())
     .then(data => {contract_abi = JSON.parse(data); getMemory(qrystalID);})               
 }

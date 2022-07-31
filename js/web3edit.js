@@ -7,7 +7,7 @@ const contract_address= "0x7FC448A703Ec1Fd740897e160F913669379516F2";
 var contract_abi = '';
 
 //Fetch ABI
-fetch('./qrystals.json')
+fetch('../qrystals.json')
 .then(res => res.text())
 .then(data => {contract_abi = JSON.parse(data); initweb3();})
 
