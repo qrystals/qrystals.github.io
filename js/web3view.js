@@ -4,12 +4,12 @@ const qrystalID = urlParams.get('id');
 
 //
 //Web3 functions
-const contract_address= "0xa071a7C9b053E6bCA911495fC5F0b56697F20CB8";
+const contract_address= "0x7FC448A703Ec1Fd740897e160F913669379516F2";
 var contract_abi = ''
 
 if(qrystalID == null || qrystalID == ''){
     //Redirect to homepage
-    //window.location.replace('https://qrystals.github.io');
+    window.location.replace('https://qrystals.github.io');
 }
 else {
     //console.log(qrystalID)
