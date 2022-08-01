@@ -17,6 +17,11 @@ var qrystalContract;
 async function initweb3() {
     if (window.ethereum != null) {
     web3 = new Web3(window.ethereum)
+    }
+    else{
+        //alert('Couldn\'t load web3 wallet. Try accessing this page from a desktop with a web3 browser connected to a wallet.')
+        web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/d294fcd3bc584b77ae8f1ef4b19b1a5c"))
+    }
     try {
         // Request account access if needed
         await window.ethereum.enable()
@@ -28,10 +33,6 @@ async function initweb3() {
         qrystalContract = new web3.eth.Contract(contract_abi, contract_address);                 
     } catch (error) {
         alert('Something went wrong! Refresh page.');
-    }
-    }
-    else{
-        alert('Couldn\'t load web3 wallet. Try accessing this page from a computer with a web3 browser connected to a wallet.')
     }
 }
 
