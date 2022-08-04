@@ -16,7 +16,7 @@ var qrystalContract;
 
 async function initweb3() {
     if (window.ethereum != null) {
-    web3 = new Web3(window.ethereum)
+    web3 = new Web3(window.ethereum);
     }
     else{
         alert('Sorry, we don\'t yet support memory update on mobile/non-Web3 browsers. Please connect to this site from a desktop computer with a Web3 compatible browser and a Web3 wallet.')
@@ -34,17 +34,6 @@ async function initweb3() {
     } catch (error) {
         alert(error);
     }
-}
-
-async function initweb3(){
-    if(window.ethereum){
-        web3 = new Web3(window.ethereum);
-    }
-    else {
-        web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/d294fcd3bc584b77ae8f1ef4b19b1a5c"))
-    }
-    accounts = await window.web3.eth.getAccounts();
-    console.log(accounts);
 }
 
 async function setMemory(memoryVal, tokenId){
