@@ -14,25 +14,46 @@ fetch('../qrystals.json')
 var accounts;
 var qrystalContract;
 
+// async function initweb3() {
+//     if (window.ethereum != null) {
+//     web3 = new Web3(window.ethereum)
+//     }
+//     else{
+//         //alert('Couldn\'t load web3 wallet. Try accessing this page from a desktop with a web3 browser connected to a wallet.')
+//         web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/d294fcd3bc584b77ae8f1ef4b19b1a5c"))
+//     }
+//     try {
+//         // Request account access if needed
+//         await window.ethereum.enable()
+//         //Access account
+//         accounts = await web3.eth.getAccounts();
+//         window.ethereum.on('accountsChanged', function (accounts) {
+//             accounts = web3.eth.getAccounts();
+//         });
+//         qrystalContract = new web3.eth.Contract(contract_abi, contract_address);                 
+//     } catch (error) {
+//         alert(error);
+//     }
+// }
+
 async function initweb3() {
-    if (window.ethereum != null) {
-    web3 = new Web3(window.ethereum)
+    if (window.ethereum) {
+        await window.ethereum.request({method: 'eth_requestAccounts'});
+        window.web3 = new Web3(window.ethereum);
+        try{
+        //Access accounts
+        accounts = await window.web3.eth.getAccounts();
+        window.ethereum.on('accountsChanged', function (accounts) {
+                accounts = web3.eth.getAccounts();
+            });
+        qrystalContract = new web3.eth.Contract(contract_abi, contract_address);
+        }
+        catch(error){
+            alert(error);
+        }
     }
     else{
-        //alert('Couldn\'t load web3 wallet. Try accessing this page from a desktop with a web3 browser connected to a wallet.')
-        web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/d294fcd3bc584b77ae8f1ef4b19b1a5c"))
-    }
-    try {
-        // Request account access if needed
-        await window.ethereum.enable()
-        //Access account
-        accounts = await web3.eth.getAccounts();
-        window.ethereum.on('accountsChanged', function (accounts) {
-            accounts = web3.eth.getAccounts();
-        });
-        qrystalContract = new web3.eth.Contract(contract_abi, contract_address);                 
-    } catch (error) {
-        alert('Something went wrong! Refresh page.');
+        alert('Please use a Web3 compatible browser(such as Chrome, Brave) and a Web3 wallet(such as Metamask)');
     }
 }
 
