@@ -17,11 +17,6 @@ var qrystalContract;
 async function initweb3() {
     if (window.ethereum != null) {
     web3 = new Web3(window.ethereum);
-    }
-    else{
-        alert('Sorry, we don\'t yet support memory update on mobile/non-Web3 browsers. Please connect to this site from a desktop computer with a Web3 compatible browser and a Web3 wallet.')
-        window.location.replace('https://qrystals.github.io');
-    }
     try {
         // Request account access if needed
         await window.ethereum.enable()
@@ -33,6 +28,11 @@ async function initweb3() {
         qrystalContract = new web3.eth.Contract(contract_abi, contract_address);                 
     } catch (error) {
         alert(error);
+    }
+    }
+    else{
+        alert('Sorry, we don\'t yet support memory update on mobile/non-Web3 browsers. Please connect to this site from a desktop computer with a Web3 compatible browser and a Web3 wallet.')
+        window.location.replace('https://qrystals.github.io');
     }
 }
 
