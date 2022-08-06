@@ -31,7 +31,7 @@ async function initweb3() {
     }
     }
     else{
-        alert('Sorry, we don\'t yet support memory update on mobile/non-Web3 browsers. Please connect to this site from a desktop computer with a Web3 compatible browser and a Web3 wallet.')
+        alert('Sorry, memory update is not supported on mobile/non-Web3 browsers. Please connect to this site from a desktop computer with a Web3 compatible browser and a Web3 wallet.')
         window.location.replace('https://qrystals.github.io');
     }
 }
