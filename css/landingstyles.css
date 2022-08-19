@@ -11355,13 +11355,7 @@ header.masthead {
   background-color: #111111 !important;
   background: url("../images/masthead_blur.JPG") no-repeat center center;
   background-size: 300% 300%;
-  /* background-size: cover; */
-  /* padding-top: 0rem;
-  padding-bottom: 0rem; */
   text-align: center;
-  /* background: linear-gradient(45deg, gold, #007aff, #34c759, #af52de, #ff2d55, gold);
-  background-size: 200% 200%;
-  animation: gradient 15s ease infinite; */
 }
 
 @keyframes gradient {
