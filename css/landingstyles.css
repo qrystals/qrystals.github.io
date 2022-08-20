@@ -11353,7 +11353,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #111111 !important;
-  background: url("../images/masthead_blur.JPG") no-repeat center center;
+  background: url("../images/masthead_blur.jpg") no-repeat center center;
   background-size: 300% 300%;
   text-align: center;
 }
