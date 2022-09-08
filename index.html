@@ -87,25 +87,35 @@
                 <div id="read" class="row g-0"  style="background-color:rgba(10, 10, 10, 255);">
                     <!-- <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div> -->
                     <div class="col-lg-6 order-lg-2 text-white">
-                        <video controls loop autoplay class="showcase-video">
+                        <br><br>
+                        <video controls loop autoplay class="showcase-video-read">
                             <source src="images/Read.mov" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <br>
                         <h2 class="exampleHeader">READ</h2>
                         <p class="lead mb-0">Point your smartphone camera to a qrystal and follow the popup, it should take you to its memory. <br> If the memory is a link, you will be redirected to the link, otherwise you will see its memory in the penseive.</p>
                     </div>
                 </div>
                 <div id="write" class="row g-0" style="background-color:rgba(10, 10, 10, 255);">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
-                    <div class="col-lg-6 my-auto showcase-text">
+                    <!-- <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div> -->
+                    <div class="col-lg-6 order-lg-1 text-white">
+                        <br>
+                        <video controls loop autoplay class="showcase-video-write">
+                            <source src="images/Write.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="col-lg-6 order-lg-2 my-auto showcase-text">
                         <h2 class="exampleHeader">WRITE</h2>
-                        <p class="lead mb-0">Use the form below to edit memory for a qrystal. Since memories are written directly on the blockchain, they incur some gas fees.</p>
+                        <p class="lead mb-0">Use the form to edit memory for a qrystal. Since memories are written directly on the blockchain, they incur some gas fees.</p>
                         <br><input type="number" placeholder="Qrystal ID" class="qrystalIDInput" id="qID"/>
                         <button class="qrystalIDButton" onclick="editMemory()">EDIT</button>
-                        <br><br><br>
+                        <br><br>
                     </div>
+                    <br><br><br>
                 </div>
             </div>
         </section>

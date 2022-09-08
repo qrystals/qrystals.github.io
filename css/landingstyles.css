@@ -11409,11 +11409,19 @@ header.masthead h1, header.masthead .h1 {
   background-size: cover;
 }
 
-.showcase .showcase-video {
-  width: 50%;
-  height: 100%;
+.showcase .showcase-video-read {
+  width: 40%;
+  height: auto;
   margin-top: 2rem;
-  margin-left: 25%;
+  margin-left: 30%;
+}
+
+.showcase .showcase-video-write {
+  width: 70%;
+  height: auto;
+  margin-top: 2rem;
+  margin-left: 15%;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
